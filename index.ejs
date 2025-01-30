@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer | Discover the World</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">Travel Explorer</a>
+        <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
+        <div class="nav-links">
+            <a href="#section1">Home</a>
+            <a href="#section2">Destinations</a>
+            <a href="#section3">Testimonials</a>
+            <a href="#contact" class="contact-btn">Contact</a>
+        </div>
+    </nav>
+
+    <div id="progress-bar"></div>
+    <div id="fullpage">
+        
+        <div class="section section1"> 
+            <div class="card" data-aos="fade-up">
+                <h2>Explore the World</h2>
+                <p>Discover breathtaking destinations and experience unforgettable adventures.</p>
+                <a href="#section2" class="btn">Explore Now</a>
+            </div>
+        </div>
+
+        <div class="section section2"> 
+            <div class="card" data-aos="fade-right">
+                <h2>Top Destinations</h2>
+                <p>Visit stunning places and create lifelong memories.</p>
+                <div class="destination-grid">
+                    <div class="destination">
+                        <img src="/images/maldives1.jpg" alt="Maldives">
+                        <h3>Maldives</h3>
+                        <p>The Maldives is a tropical paradise known for its crystal-clear waters, white sandy beaches, and luxurious resorts. It's a perfect destination for relaxation and water sports.</p>
+                    </div>
+                    <div class="destination">
+                        <img src="/images/paris1.jpg" alt="Paris">
+                        <h3>Paris, France</h3>
+                        <p>Paris, the City of Light, is renowned for its iconic landmarks like the Eiffel Tower, the Louvre Museum, and its romantic atmosphere. It's a must-visit for culture, history, and art lovers.</p>
+                    </div>
+                    <div class="destination">
+                        <img src="/images/swiss1.jpg" alt="Switzerland">
+                        <h3>Swiss Alps</h3>
+                        <p>The Swiss Alps offer stunning mountain scenery, world-class skiing resorts, and charming villages. Whether you're an adventure enthusiast or just looking to relax in nature, the Swiss Alps have something for everyone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section3"> 
+            <div class="testimonial-slider" data-aos="fade-up">
+                <h2>What Our Travelers Say</h2>
+                <div class="testimonial">
+                    <p>"Travel Explorer made my trip unforgettable! Everything was perfectly arranged."</p>
+                    <h4>- Sarah Williams</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Best travel experience ever! Highly recommended for adventure lovers."</p>
+                    <h4>- John Smith</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p>Email: <a href="mailto:riteshkinge81@gmail.com">riteshkinge81@gmail.com</a></p>
+                <p>Phone: <a href="tel:+917397916342">+91 7397916342</a></p>
+            </div>
+            <div class="footer-middle">
+                <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        AOS.init();
+        new fullpage('#fullpage', {
+            autoScrolling: true,
+            navigation: true,
+            scrollHorizontally: true
+        });
+
+        function toggleNav() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
